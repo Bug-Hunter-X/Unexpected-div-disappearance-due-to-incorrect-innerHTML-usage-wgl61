@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <div id="myDiv">
+    <div id="textToHide">
+      This text is now correctly hidden.
+    </div>
+    This text should still be visible.
+  </div>
+  <script>
+    // Correctly hiding the text using CSS class
+    document.getElementById("textToHide").classList.add("hidden");
+  </script>
+</body>
+</html>
